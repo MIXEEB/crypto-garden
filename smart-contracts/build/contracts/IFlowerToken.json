@@ -1,0 +1,575 @@
+{
+  "contractName": "IFlowerToken",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenOwner",
+          "type": "address"
+        }
+      ],
+      "name": "plant",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_seedTokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setSeedTokenAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenOwner",
+          "type": "address"
+        }
+      ],
+      "name": "getAllFlowers",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenOwner\",\"type\":\"address\"}],\"name\":\"getAllFlowers\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenOwner\",\"type\":\"address\"}],\"name\":\"plant\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_seedTokenAddress\",\"type\":\"address\"}],\"name\":\"setSeedTokenAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IFlowerToken.sol\":\"IFlowerToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IFlowerToken.sol\":{\"keccak256\":\"0x107ed18263edf3cf2f3f31b091cb3b6ccc4d4006e8144a3a87e18db5d0852b41\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8793ac03ccf6af240197e4851660dbf90b9a4f4c7bfc9a2b5708956d87b7c0c3\",\"dweb:/ipfs/Qma1Fa1RJboNDeKRjSLUTEaiv7oNw3BpbWnGacsnqutRwa\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "//SPDX-License-Identifier: MIT\r\npragma solidity 0.8.11;\r\n\r\ninterface IFlowerToken {\r\n    function plant(address _tokenOwner) external;\r\n    function setSeedTokenAddress(address _seedTokenAddress) external;\r\n    function getAllFlowers(address _tokenOwner) external view returns(uint[] memory);\r\n}",
+  "sourcePath": "F:\\Dev\\blockchain\\crypto-garden\\smart-contracts\\contracts\\IFlowerToken.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IFlowerToken.sol",
+    "exportedSymbols": {
+      "IFlowerToken": [
+        2541
+      ]
+    },
+    "id": 2542,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2522,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFlowerToken",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2541,
+        "linearizedBaseContracts": [
+          2541
+        ],
+        "name": "IFlowerToken",
+        "nameLocation": "69:12:14",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "af775092",
+            "id": 2527,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "plant",
+            "nameLocation": "98:5:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2525,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2524,
+                  "mutability": "mutable",
+                  "name": "_tokenOwner",
+                  "nameLocation": "112:11:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2527,
+                  "src": "104:19:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2523,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "103:21:14"
+            },
+            "returnParameters": {
+              "id": 2526,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "133:0:14"
+            },
+            "scope": 2541,
+            "src": "89:45:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "da0d52d9",
+            "id": 2532,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSeedTokenAddress",
+            "nameLocation": "149:19:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2530,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2529,
+                  "mutability": "mutable",
+                  "name": "_seedTokenAddress",
+                  "nameLocation": "177:17:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2532,
+                  "src": "169:25:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2528,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "169:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "168:27:14"
+            },
+            "returnParameters": {
+              "id": 2531,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:0:14"
+            },
+            "scope": 2541,
+            "src": "140:65:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "29a1ed3f",
+            "id": 2540,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAllFlowers",
+            "nameLocation": "220:13:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2535,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2534,
+                  "mutability": "mutable",
+                  "name": "_tokenOwner",
+                  "nameLocation": "242:11:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2540,
+                  "src": "234:19:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2533,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:21:14"
+            },
+            "returnParameters": {
+              "id": 2539,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2538,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2540,
+                  "src": "277:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2536,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "277:4:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2537,
+                    "nodeType": "ArrayTypeName",
+                    "src": "277:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "276:15:14"
+            },
+            "scope": 2541,
+            "src": "211:81:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2542,
+        "src": "59:236:14",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:263:14"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/IFlowerToken.sol",
+    "exportedSymbols": {
+      "IFlowerToken": [
+        2541
+      ]
+    },
+    "id": 2542,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2522,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFlowerToken",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2541,
+        "linearizedBaseContracts": [
+          2541
+        ],
+        "name": "IFlowerToken",
+        "nameLocation": "69:12:14",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "af775092",
+            "id": 2527,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "plant",
+            "nameLocation": "98:5:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2525,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2524,
+                  "mutability": "mutable",
+                  "name": "_tokenOwner",
+                  "nameLocation": "112:11:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2527,
+                  "src": "104:19:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2523,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "103:21:14"
+            },
+            "returnParameters": {
+              "id": 2526,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "133:0:14"
+            },
+            "scope": 2541,
+            "src": "89:45:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "da0d52d9",
+            "id": 2532,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSeedTokenAddress",
+            "nameLocation": "149:19:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2530,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2529,
+                  "mutability": "mutable",
+                  "name": "_seedTokenAddress",
+                  "nameLocation": "177:17:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2532,
+                  "src": "169:25:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2528,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "169:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "168:27:14"
+            },
+            "returnParameters": {
+              "id": 2531,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:0:14"
+            },
+            "scope": 2541,
+            "src": "140:65:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "29a1ed3f",
+            "id": 2540,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAllFlowers",
+            "nameLocation": "220:13:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2535,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2534,
+                  "mutability": "mutable",
+                  "name": "_tokenOwner",
+                  "nameLocation": "242:11:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2540,
+                  "src": "234:19:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2533,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:21:14"
+            },
+            "returnParameters": {
+              "id": 2539,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2538,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2540,
+                  "src": "277:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2536,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "277:4:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2537,
+                    "nodeType": "ArrayTypeName",
+                    "src": "277:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "276:15:14"
+            },
+            "scope": 2541,
+            "src": "211:81:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2542,
+        "src": "59:236:14",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:263:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-01-03T12:05:22.974Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

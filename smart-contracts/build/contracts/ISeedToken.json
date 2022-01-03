@@ -1,0 +1,490 @@
+{
+  "contractName": "ISeedToken",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "plantSeed",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_flowerTokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setFlowerTokenInstance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "shareSeeds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"plantSeed\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_flowerTokenAddress\",\"type\":\"address\"}],\"name\":\"setFlowerTokenInstance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"shareSeeds\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ISeedToken.sol\":\"ISeedToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ISeedToken.sol\":{\"keccak256\":\"0x24cf475aeeb4035721fd8c8760591ea671d3e5bacfa27ef9617d1a54b444b939\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a2a05a0ee2638fd4d48fc2299044326a5faeeaee8ac859fbcd57977ffb38e2f5\",\"dweb:/ipfs/QmNT2pnZZYZFraj5SkdAfeZvrnVTRYEeN4zecttNpu31oH\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "//SPDX-License-Identifier: MIT\r\npragma solidity 0.8.11;\r\n\r\ninterface ISeedToken {\r\n    function plantSeed() external;\r\n    function setFlowerTokenInstance(address _flowerTokenAddress) external;\r\n    function shareSeeds(address account, uint256 amount) external;\r\n}",
+  "sourcePath": "F:\\Dev\\blockchain\\crypto-garden\\smart-contracts\\contracts\\ISeedToken.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/ISeedToken.sol",
+    "exportedSymbols": {
+      "ISeedToken": [
+        2559
+      ]
+    },
+    "id": 2560,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2543,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISeedToken",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2559,
+        "linearizedBaseContracts": [
+          2559
+        ],
+        "name": "ISeedToken",
+        "nameLocation": "69:10:15",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "74119a38",
+            "id": 2546,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "plantSeed",
+            "nameLocation": "96:9:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2544,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:2:15"
+            },
+            "returnParameters": {
+              "id": 2545,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "116:0:15"
+            },
+            "scope": 2559,
+            "src": "87:30:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "22c53405",
+            "id": 2551,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFlowerTokenInstance",
+            "nameLocation": "132:22:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2549,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2548,
+                  "mutability": "mutable",
+                  "name": "_flowerTokenAddress",
+                  "nameLocation": "163:19:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2551,
+                  "src": "155:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2547,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:29:15"
+            },
+            "returnParameters": {
+              "id": 2550,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "192:0:15"
+            },
+            "scope": 2559,
+            "src": "123:70:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "755bf19c",
+            "id": 2558,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "shareSeeds",
+            "nameLocation": "208:10:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2556,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2553,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "227:7:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2558,
+                  "src": "219:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2552,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "219:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2555,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "244:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2558,
+                  "src": "236:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2554,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "236:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:33:15"
+            },
+            "returnParameters": {
+              "id": 2557,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "260:0:15"
+            },
+            "scope": 2559,
+            "src": "199:62:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2560,
+        "src": "59:205:15",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:232:15"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/ISeedToken.sol",
+    "exportedSymbols": {
+      "ISeedToken": [
+        2559
+      ]
+    },
+    "id": 2560,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2543,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISeedToken",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2559,
+        "linearizedBaseContracts": [
+          2559
+        ],
+        "name": "ISeedToken",
+        "nameLocation": "69:10:15",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "74119a38",
+            "id": 2546,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "plantSeed",
+            "nameLocation": "96:9:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2544,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:2:15"
+            },
+            "returnParameters": {
+              "id": 2545,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "116:0:15"
+            },
+            "scope": 2559,
+            "src": "87:30:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "22c53405",
+            "id": 2551,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFlowerTokenInstance",
+            "nameLocation": "132:22:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2549,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2548,
+                  "mutability": "mutable",
+                  "name": "_flowerTokenAddress",
+                  "nameLocation": "163:19:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2551,
+                  "src": "155:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2547,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:29:15"
+            },
+            "returnParameters": {
+              "id": 2550,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "192:0:15"
+            },
+            "scope": 2559,
+            "src": "123:70:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "755bf19c",
+            "id": 2558,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "shareSeeds",
+            "nameLocation": "208:10:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2556,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2553,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "227:7:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2558,
+                  "src": "219:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2552,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "219:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2555,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "244:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2558,
+                  "src": "236:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2554,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "236:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:33:15"
+            },
+            "returnParameters": {
+              "id": 2557,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "260:0:15"
+            },
+            "scope": 2559,
+            "src": "199:62:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2560,
+        "src": "59:205:15",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:232:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-01-03T12:05:22.975Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
