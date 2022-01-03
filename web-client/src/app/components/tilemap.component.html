@@ -1,0 +1,8 @@
+<div class="tileField">
+    <div *ngFor="let flower of flowers$ | async" >
+        <div class="tile">
+            <img src="{{flower.flowerSrc}}" [ngStyle]="getColorFilter(flower.id, flower.flowerColor)"/>
+            <img src="{{flower.potSrc}}" [ngStyle]="getColorFilter(flower.id, flower.potColor)" class="pot" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{
+    "name": "crypto-garden",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./smart-contracts/app.init.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Igor Mihejev",
+    "license": "ISC",
+    "dependencies": {
+      "web3": "^1.6.1"
+    }
+  }
+  
